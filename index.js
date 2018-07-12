@@ -99,7 +99,7 @@ function updateSummary(filePath, summary, outcome, options) {
     return summary
   }
   const report = JSON.parse(fs.readFileSync(filePath))
-  summary.score = getAverageScore(report)
+  summary.score = 0 // getAverageScore(report)
   return summary
 }
 
